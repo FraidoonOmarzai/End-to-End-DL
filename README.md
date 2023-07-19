@@ -22,3 +22,10 @@ pip install -r requirements.txt
 4. define logger (The Logging is a means of tracking events that happen when some software runs)
 
 5. define utils (The utils.py makes it easy to execute common tasks in Python scripts)
+
+6. Run the notebook on google colab: 
+* notebooks/Download_rsna_pneumonia.ipynb
+* The above notebook download the dataset directly from the kaggle to google colab 
+* We got a sample of images(400 images) in the .jpeg format after performing some preprocess steps
+* finally we will convert the sample to zip file and store the sample in github repository
+ 
