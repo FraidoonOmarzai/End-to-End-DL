@@ -19,3 +19,6 @@ conda create -n dl-env python=3.9 -y
 conda activate dl-env
 pip install -r requirements.txt
 ```
+4. define logger (The Logging is a means of tracking events that happen when some software runs)
+
+5. define utils (The utils.py makes it easy to execute common tasks in Python scripts)
