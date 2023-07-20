@@ -28,4 +28,10 @@ pip install -r requirements.txt
 * The above notebook download the dataset directly from the kaggle to google colab 
 * We got a sample of images(400 images) in the .jpeg format after performing some preprocess steps
 * finally we will convert the sample to zip file and store the sample in github repository
+
+7. **Data Ingestion**
+* config.yaml defined
+* constants added
+* 01_data_ingeston.ipynb created
+* stage_01_data_ingeston.py created
  

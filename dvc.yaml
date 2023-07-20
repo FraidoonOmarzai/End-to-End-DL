@@ -1,0 +1,9 @@
+stages:
+  data_ingestion:
+    cmd: python3 src/PnemoniaDisease/pipeline/stage_01_data_ingeston.py 
+    deps:
+      - src/PnemoniaDisease/pipeline/stage_01_data_ingeston.py
+      - config/config.yaml
+      - data/raw/pneumonia.zip
+    outs:
+      - data/processed/train

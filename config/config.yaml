@@ -1,0 +1,4 @@
+data_ingestion:
+  source_URL: https://github.com/FraidoonOmarzai/data/raw/main/pneumonia.zip
+  zip_dir: data/raw/pneumonia.zip
+  unzip_dir: data/processed
