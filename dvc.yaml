@@ -7,3 +7,18 @@ stages:
       - data/raw/pneumonia.zip
     outs:
       - data/processed/train
+
+  
+  prepare_base_model:
+    cmd: python src/PnemoniaDisease/pipeline/stage_02_prepare_base_model.py
+    deps:
+      - src/PnemoniaDisease/pipeline/stage_02_prepare_base_model.py
+      - config/config.yaml
+    params:
+      - IMAGE_SIZE
+      - INCLUDE_TOP
+      - CLASSES
+      - WEIGHTS
+      - LEARNING_RATE
+    outs:
+      - artifacts/prepare_base_model

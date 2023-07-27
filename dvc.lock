@@ -5,8 +5,8 @@ stages:
     deps:
     - path: config/config.yaml
       hash: md5
-      md5: 6bfee9ec6e11dd07b00ac14e15f924d0
-      size: 154
+      md5: 1c979e411ca661d14d56ddd5ee6a579e
+      size: 305
     - path: data/raw/pneumonia.zip
       hash: md5
       md5: 12285c1c49a85293c1e39bbed3a6a6b5
@@ -21,3 +21,30 @@ stages:
       md5: 09483f2232b015cb14e00d576e09cafe.dir
       size: 25416610
       nfiles: 401
+  prepare_base_model:
+    cmd: python src/PnemoniaDisease/pipeline/stage_02_prepare_base_model.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 1c979e411ca661d14d56ddd5ee6a579e
+      size: 305
+    - path: src/PnemoniaDisease/pipeline/stage_02_prepare_base_model.py
+      hash: md5
+      md5: 2075b91392b769ad0c6d355591830658
+      size: 3125
+    params:
+      params.yaml:
+        CLASSES: 2
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+        INCLUDE_TOP: false
+        LEARNING_RATE: 0.01
+        WEIGHTS: imagenet
+    outs:
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: a66a7178a1a13fe5f25d0a0619189691.dir
+      size: 18357160
+      nfiles: 1

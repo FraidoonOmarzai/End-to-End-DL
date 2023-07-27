@@ -1,4 +1,10 @@
+artifacts_root: artifacts
+
 data_ingestion:
   source_URL: https://github.com/FraidoonOmarzai/data/raw/main/pneumonia.zip
   zip_dir: data/raw/pneumonia.zip
   unzip_dir: data/processed
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5

@@ -35,3 +35,10 @@ pip install -r requirements.txt
 * 01_data_ingeston.ipynb created
 * stage_01_data_ingeston.py created
  
+8. **Prepare Base Model**
+* config.yaml defined
+* define params.yaml
+* 02_prepare_base_model.ipynb created
+* stage_02_prepare_base_model.py created
+
+**Note: static methods** in Python are extremely similar to python class level methods, the difference being that a static method is bound to a class rather than the objects for that class. This means that a static method can be called without an object for that class.
