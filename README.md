@@ -42,3 +42,16 @@ pip install -r requirements.txt
 * stage_02_prepare_base_model.py created
 
 **Note: static methods** in Python are extremely similar to python class level methods, the difference being that a static method is bound to a class rather than the objects for that class. This means that a static method can be called without an object for that class.
+
+9. **Model Training**
+* config.yaml defined
+* define params.yaml
+* 03_model_traning.ipynb created
+    * adding tensorboard callbacks
+    
+    ```bash
+    tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir
+    ```
+    
+    * adding checkpoint callbacks
+* stage_03_model_traning.py created
