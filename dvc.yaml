@@ -22,3 +22,19 @@ stages:
       - LEARNING_RATE
     outs:
       - artifacts/prepare_base_model
+
+
+  training:
+    cmd: python src/PnemoniaDisease/pipeline/stage_03_model_training.py
+    deps:
+      - src/PnemoniaDisease/pipeline/stage_03_model_training.py
+      - config/config.yaml
+      - data/processed/train
+      - artifacts/prepare_base_model
+    params:
+      - IMAGE_SIZE
+      - EPOCHS
+      - BATCH_SIZE
+      - AUGMENTATION
+    outs:
+      - artifacts/training/model.h5
