@@ -57,5 +57,5 @@ pip install -r requirements.txt
 * stage_03_model_traning.py created
 
 10. **Model Evaluation**
-* 02_prepare_base_model.ipynb created
-* stage_02_prepare_base_model.py created
+* 04_model_evaluation.ipynb created
+* stage_04_model_evaluation.py created
