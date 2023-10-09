@@ -55,3 +55,7 @@ pip install -r requirements.txt
     
     * adding checkpoint callbacks
 * stage_03_model_traning.py created
+
+10. **Model Evaluation**
+* 02_prepare_base_model.ipynb created
+* stage_02_prepare_base_model.py created
