@@ -59,3 +59,12 @@ pip install -r requirements.txt
 10. **Model Evaluation**
 * 04_model_evaluation.ipynb created
 * stage_04_model_evaluation.py created
+
+11. **DVC Section**
+
+* add code to dvc.yaml and run the below commands
+```bash
+dvc init
+dvc repro
+dvc dag
+```

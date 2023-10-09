@@ -38,3 +38,17 @@ stages:
       - AUGMENTATION
     outs:
       - artifacts/training/model.h5
+
+  evaluation:
+    cmd: python3 src/PnemoniaDisease/pipeline/stage_04_model_evaluation.py
+    deps:
+      - src/PnemoniaDisease/pipeline/stage_04_model_evaluation.py
+      - config/config.yaml
+      - data/processed/train
+      - artifacts/training/model.h5
+    params:
+      - IMAGE_SIZE
+      - BATCH_SIZE
+    metrics:
+    - scores.json:
+        cache: false
