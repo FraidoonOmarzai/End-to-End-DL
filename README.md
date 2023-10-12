@@ -74,3 +74,21 @@ dvc dag
 * create pipeline/prediction.py
 * create index.html
 * create app.py
+
+13. **Docker file**
+
+* create Dockerfile
+* built a docker images
+```bash
+docker build -t pneumonia-app .
+docker ps
+docker images
+```
+* running our app
+```bash
+docker run -p 8080:8080 pneumonia-app
+```
+
+14. **Github Action(CI/CD)**
+
+* create cicd1.yaml file and push the changes to github
