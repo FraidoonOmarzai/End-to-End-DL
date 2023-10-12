@@ -68,3 +68,9 @@ dvc init
 dvc repro
 dvc dag
 ```
+
+12. **Webapp**
+
+* create pipeline/prediction.py
+* create index.html
+* create app.py
