@@ -14,9 +14,3 @@ types-PyYAML
 scipy
 Flask
 Flask-Cors
-mlflow>=2.2.2
-python-dotenv
-pydicom
-opencv-python
-
--e .
